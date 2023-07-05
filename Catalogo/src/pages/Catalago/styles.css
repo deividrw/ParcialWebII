@@ -1,0 +1,150 @@
+.container {
+  /* width: 100vw;
+  margin: 0 auto; */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filters select,
+.filters input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: left;
+  width: 500px;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.product-name {
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.product-category {
+  font-size: 14px;
+  color: #dc1515;
+  padding-right: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #efef07;
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-input,
+.price-input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .filters select,
+  .filters input,
+  .item-input,
+  .price-input {
+    padding: 6px;
+  }
+
+  .product-item {
+    padding: 8px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .delete-button,
+  .add-button {
+    padding: 6px 12px;
+  }
+}
